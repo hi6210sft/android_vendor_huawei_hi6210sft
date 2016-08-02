@@ -66,8 +66,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,vendor/huawei/hi6210sft/proprietary/vendor/firmware,system/vendor/firmware) \
     vendor/huawei/hi6210sft/proprietary/vendor/lib/libbt-vendor.so:system/vendor/lib/libbt-vendor.so \
-    vendor/huawei/hi6210sft/proprietary/vendor/lib/libbt-vendor-hi110x.so:system/vendor/lib/libbt-vendor-hi110x.so
+    vendor/huawei/hi6210sft/proprietary/vendor/lib/libbt-vendor-hi110x.so:system/vendor/lib/libbt-vendor-hi110x.so \
+    vendor/huawei/hi6210sft/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
+    vendor/huawei/hi6210sft/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so
 
 # Vendor 64 Bit Libs
 PRODUCT_COPY_FILES += \
     vendor/huawei/hi6210sft/proprietary/vendor/lib64/libbt-vendor-hi110x.so:system/vendor/lib64/libbt-vendor-hi110x.so
+
+# XBIN
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,vendor/huawei/hi6210sft/proprietary/xbin/,system/xbin) \
