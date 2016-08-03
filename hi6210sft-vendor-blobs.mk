@@ -55,6 +55,14 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/hi6210sft/proprietary/lib64/hw/gralloc.hi6210sft.so:system/lib64/hw/gralloc.hi6210sft.so \
     vendor/huawei/hi6210sft/proprietary/lib64/libion.so:system/lib64/libion.so
 
+# Keychars
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,vendor/huawei/hi6210sft/proprietary/usr/keychars,system/usr/keychars) \
+
+# Keylayout
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,vendor/huawei/hi6210sft/proprietary/usr/keylayout,system/usr/keylayout) \
+
 # Wifi ETC
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,vendor/huawei/hi6210sft/proprietary/etc/wifi/,system/etc/wifi) \
